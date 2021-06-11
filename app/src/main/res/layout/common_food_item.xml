@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="380dp"
+    android:layout_height="201dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:elevation="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/common_food_item_bg"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginVertical="15dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/foodImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/common_mloukhia"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/foodNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="COUSOUS"
+                android:textSize="27dp"/>
+
+            <TextView
+                android:id="@+id/caloriesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:alpha="0.65"
+                android:layout_marginStart="20dp"
+                android:text="320 calories in 100g"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/seeMoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/dark_orange"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:textSize="15dp"
+                android:text="See more"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

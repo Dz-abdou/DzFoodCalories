@@ -1,0 +1,4 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:top="45dp" android:right="4.5dp" android:left="4.5dp" android:drawable="@drawable/spinner_bg" />
+</layer-list>

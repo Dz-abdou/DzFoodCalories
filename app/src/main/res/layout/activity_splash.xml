@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/bgphoto1"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/bgphoto2" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/new_logo_orange"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="-60dp"
+        android:src="@drawable/bgphoto3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="120dp"/>
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-40dp"
+        android:layout_marginStart="-37dp"
+        android:src="@drawable/bgphoto1"/>
+
+
+
+</RelativeLayout>

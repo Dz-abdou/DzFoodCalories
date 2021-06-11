@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264731852087",
+    "project_id": "dzfoodcalories2",
+    "storage_bucket": "dzfoodcalories2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264731852087:android:210798b1b0ed69b4c86eb2",
+        "android_client_info": {
+          "package_name": "example.com.pfe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264731852087-d97l3m633ee0ht57serfoped709mdbj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhAgzDfCCntqoGL-7Bpkg33uxv9IcIXS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264731852087-d97l3m633ee0ht57serfoped709mdbj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

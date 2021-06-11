@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/skipTextView"
+        android:onClick="skipButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skip"
+        android:textColor="@color/black"
+        android:alpha="0.7"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/completeProfileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_orange"
+        android:textSize="28sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="Complete your profile"/>
+
+
+    <RelativeLayout
+        android:id="@+id/loginRelativeLayout"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:elevation="9dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/completeProfileTextView"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/view_bg">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@drawable/orange_empty_rounded"
+                android:hint="Your Age"
+                android:textColorHint="@color/icon_gray"
+                android:textColor="@color/dark_orange"
+                android:inputType="number"
+                android:singleLine="true"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/light_orange"
+                android:foregroundTint="@color/dark_orange"/>
+
+
+            <EditText
+                android:id="@+id/WeightEditText"
+                android:layout_below="@id/ageEditText"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/orange_empty_rounded"
+                android:hint="Weight in cm"
+                android:textColorHint="@color/icon_gray"
+                android:textColor="@color/dark_orange"
+                android:inputType="number"
+                android:singleLine="true"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/light_orange"
+                android:foregroundTint="@color/dark_orange"/>
+
+
+            <EditText
+                android:id="@+id/heightEditText"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:hint="Height in cm"
+                android:inputType="number"
+                android:background="@drawable/orange_empty_rounded"
+                android:textColor="@color/dark_orange"
+                android:textColorHint="@color/icon_gray"
+                android:fontFamily="@font/poppins_regular"
+                android:singleLine="true"
+                android:paddingStart="20dp"
+                android:layout_below="@+id/WeightEditText"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/light_orange"
+                android:foregroundTint="@color/dark_orange"/>
+
+            <RelativeLayout
+                android:id="@+id/goalRelativeLayout"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/heightEditText"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/orange_empty_rounded">
+
+                <Spinner
+                    android:paddingStart="15dp"
+                    android:id="@+id/goalSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/light_orange"
+                    android:prompt="@color/icon_gray"
+                    android:foregroundTint="@color/dark_orange"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/illnessRelativeLayout"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/goalRelativeLayout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/orange_empty_rounded">
+
+                <Spinner
+                    android:paddingStart="15dp"
+                    android:id="@+id/illnessSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/light_orange"
+                    android:prompt="@color/icon_gray"
+                    android:foregroundTint="@color/dark_orange"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/loginButtonRelativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginRelativeLayout"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/orange_fill__less_rounded_color">
+
+        <Button
+            android:onClick="saveButtonOnClick"
+            android:id="@+id/LoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?attr/buttonBarButtonStyle"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="30dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:onClick="HomeButtonClicked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/homeImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:elevation="10dp"
+                android:src="@drawable/ic_home_gray" />
+
+            <TextView
+                android:id="@+id/homeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homeImageView"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Home"
+                android:textColor="@color/nav_bar_gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="selectButtonClicked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/selectImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/ic_image_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectImageView"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Select"
+                android:textColor="@color/nav_bar_gray"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="cameraButtonClicked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/ic_camera_gray" />
+
+            <TextView
+                android:id="@+id/imageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageImageView"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Camera"
+                android:textColor="@color/nav_bar_gray"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/ic_profile_orange" />
+
+            <TextView
+                android:id="@+id/profileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileImageView"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Profile"
+                android:textColor="@color/dark_orange"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="11dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
