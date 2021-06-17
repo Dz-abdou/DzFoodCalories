@@ -386,7 +386,7 @@ public class predictionActivity extends AppCompatActivity {
             // Releases model resources if no longer used.
             model.close();
             for(int i = 0 ; i < 11; i++) {
-                if(outputFeature0.getFloatValue(i) > 60F && !foodRecognized)
+                if(outputFeature0.getFloatValue(i) > 80F && !foodRecognized)
                     foodRecognized = true;
                 predictionValues.add(outputFeature0.getFloatValue(i));
             }
